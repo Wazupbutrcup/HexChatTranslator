@@ -1,0 +1,105 @@
+# HexChatTranslator Configuration File
+
+# ==========================
+# General Plugin Settings
+# ==========================
+
+# To use the Google Translate API, you need to obtain an API key from Google Cloud.
+# Follow these steps to get your API key:
+#
+# 1. Go to the Google Cloud Console: https://console.cloud.google.com/
+# 2. Create a new project or select an existing one.
+# 3. Navigate to the "APIs & Services" > "Library" section.
+# 4. Search for "Cloud Translation API" and enable it for your project.
+# 5. Go to the "Credentials" section and click "Create Credentials".
+# 6. Choose "API Key" from the options and your API key will be generated.
+# 7. Copy this key and paste it below in the `google-api-key` field.
+google-api-key: 'YOUR_GOOGLE_API_KEY_HERE'
+
+# The prefix used for messages from the plugin. You can use color codes.
+# For example, &7[&aHexChatTranslator&7]&r
+plugin-prefix: '&7[&aHexChatTranslator&7]&r '
+
+# ==========================
+# Default Language Settings
+# ==========================
+
+# The language to use if a player's language is not set in the database.
+default-language: 'en'
+
+# ==========================
+# Supported Chat Plugins
+# ==========================
+
+# Set to true if you want to enable support for a specific chat plugin.
+# Make sure the corresponding plugin is installed and enabled on the server.
+
+# EssentialsXChat Support
+essentialsxchat-support: true
+
+# LuckPermsChat Support
+luckpermschat-support: true
+
+# ==========================
+# Message Settings
+# ==========================
+
+# Language Change Command
+# Configurations related to the /language command
+language-command:
+  # Whether players can change their language using the command
+  enabled: true
+  # Permission required to use the command
+  permission: "hexchattranslator.languagechange"
+
+# Messages sent to players when they change their language settings.
+# Customize these messages to suit your server's style.
+messages:
+  language-set: "&aYour language has been set to &b{language}&a."
+  invalid-language: "&cInvalid language code! Please use a valid ISO 639-1 language code."
+  non-player: "&cOnly players can set their language."
+  usage: "&eUsage: /language <language-code>"
+
+# ==========================
+# Translation Settings
+# ==========================
+
+# Available Languages
+# -------------------------------------------
+# List of languages supported by the Google Translate API.
+# This section can be used to provide a list of languages that players can choose from.
+languages:
+  - 'en' # English
+  - 'es' # Spanish
+  - 'fr' # French
+  - 'de' # German
+  - 'zh' # Chinese
+  - 'ja' # Japanese
+  - 'ko' # Korean
+  - 'ru' # Russian
+  - 'pt' # Portuguese
+  - 'it' # Italian
+
+
+# The default color code for translated messages.
+# Use Minecraft color codes (e.g., '&7' for gray, '&f' for white).
+translated-message-color: "&7"
+
+# ==========================
+# Logging Settings
+# ==========================
+
+# Enable or disable logging of translations.
+# If enabled, the plugin will log all translated messages to the console.
+logging:
+  enabled: false
+  level: "INFO" # Possible values: "INFO", "DEBUG", "ERROR"
+
+# ==========================
+# Database Settings
+# ==========================
+
+# Configuration for the SQLite database where player language preferences are stored.
+database:
+  file: 'players.db'
+  # Other database settings can be added here if necessary

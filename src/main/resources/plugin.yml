@@ -1,0 +1,40 @@
+name: HexChatTranslator
+version: '1.0-SNAPSHOT'
+main: us.wazupbutrcup.hexChatTranslator.HexChatTranslator
+api-version: '1.21'
+
+# A brief description of the plugin's functionality
+description: >
+  HexChatTranslator is a plugin that translates chat messages to the preferred language of each player using the Google Translate API. Players can set their preferred language and have messages automatically translated.
+
+# List of authors or contributors
+authors:
+  - Wazupbutrcup
+  - HexiosStudios
+
+# Plugin dependencies
+depend: []
+softdepend: [Essentials, LuckPerms]
+
+# Commands and their configurations
+commands:
+  language:
+    description: "Set your preferred language for chat translations"
+    usage: "/language <language-code>"
+    aliases: [lang, setlang, setlanguage]
+    permission: hexchattranslator.language
+    permission-message: "&cYou do not have permission to use this command."
+
+# Permissions and their default settings
+permissions:
+  hexchattranslator.language:
+    description: "Allows a player to set their preferred language for chat translations"
+    default: true
+
+# Extra plugin metadata
+# load: STARTUP
+# website: "https://example.com"
+# prefix: "[HexChatTranslator]"
+
+# The default configuration file for the plugin
+default-config: true
