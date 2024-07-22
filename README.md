@@ -79,7 +79,7 @@ This project is licensed under the [MIT License](LICENSE).
 - [SQLite](https://www.sqlite.org/index.html)
 - [EssentialsX](https://essentialsx.net/)
 - [LuckPerms](https://luckperms.net/)
-- 
+
 ## Donation
 
 If you find HexChatTranslator useful and would like to support its development, consider making a donation. Your support helps us improve and maintain the project.
