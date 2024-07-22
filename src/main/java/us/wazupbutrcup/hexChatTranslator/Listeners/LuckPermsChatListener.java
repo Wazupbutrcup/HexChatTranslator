@@ -13,7 +13,7 @@ public class LuckPermsChatListener implements Listener {
     private final HexChatTranslator plugin;
     private final Translator translator;
     private final DatabaseManager databaseManager;
-    private final LuckPerms luckPerms;
+    private LuckPerms luckPerms;
 
     public LuckPermsChatListener(HexChatTranslator plugin, Translator translator, DatabaseManager databaseManager) {
         this.plugin = plugin;
