@@ -6,7 +6,7 @@
 
     <groupId>us.wazupbutrcup</groupId>
     <artifactId>HexChatTranslator</artifactId>
-    <version>1.0.1</version>
+    <version>v1.0.0</version>
     <packaging>jar</packaging>
 
     <name>HexChatTranslator</name>
